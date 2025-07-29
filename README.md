@@ -1,5 +1,5 @@
 <h1 align="center">🤖 Withyou_bot</h1>
-🌐[Сайт проекта WithYou_bot](https://dente22.github.io/WithYou_bot_public/)
+[Сайт проекта WithYou_bot](https://dente22.github.io/WithYou_bot_public/)
 <h3 align="center">Анонимная поддержка, письма и общение — в трудный момент</h3>
 
 <p align="center">
