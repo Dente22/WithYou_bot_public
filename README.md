@@ -55,41 +55,53 @@
 
 ## 📸 Скриншоты
 <h3>🤖 О боте</h3>
-<img src="media/5208607604543189539.jpg" width="200"/
+<p align="left">
+  <img src="media/5208607604543189539.jpg" width="200" style="margin-right:10px;"/>
+</p>
 
 <h3>🧠 Меню чувств</h3>
-<img src="media/5208607604543189540.jpg" width="200"/
+<p align="left">
+  <img src="media/5208607604543189540.jpg" width="200"/>
+  <img src="media/5208607604543189541.jpg" width="200"/>
+</p>
 
-<h3>💬 Ответ на «про любовь»</h3>
-<img src="media/5208607604543189541.jpg" width="200"/
+<h3>💬 Ответы на чувства</h3>
+<p align="left">
+  <img src="media/5208607604543189542.jpg" width="200"/>
+  <img src="media/5208607604543189543.jpg" width="200"/>
+  <img src="media/5208607604543189544.jpg" width="200"/>
+</p>
 
-<h3>💬 Ответ на «мне тяжело»</h3>
-<img src="media/5208607604543189542.jpg" width="200"/
+<h3>✉️ Письма незнакомцам</h3>
+<p align="left">
+  <img src="media/5208607604543189545.jpg" width="200"/>
+  <img src="media/5208607604543189550.jpg" width="200"/>
+</p>
 
-<h3>💬 Ответ на «я ничего не чувствую»</h3>
-<img src="media/5208607604543189543.jpg" width="200"/
+<h3>🎧 Музыка по состоянию</h3>
+<p align="left">
+  <img src="media/5208607604543189547.jpg" width="200"/>
+</p>
 
-<h3>💬 Ответ на «у меня паника»</h3>
-<img src="media/5208607604543189544.jpg" width="200"/
-
-<h3>✉️ Написание и прочтение письма незнакомца</h3>
-<img src="media/5208607604543189545.jpg" width="200"/
-<img src="media/5208607604543189550.jpg" width="200"/
-
-<h3>Выбери свой плейлист под настроение</h3>
-<img src="media/5208607604543189547.jpg" width="200"/
-
-<h3>📍 Геолокация и поиск рядом</h3>
-<img src="media/5208607604543189549.jpg" width="200"/
-<img src="media/5208607604543189548.jpg" width="200"/
+<h3>📍 Геолокация и люди рядом</h3>
+<p align="left">
+  <img src="media/5208607604543189549.jpg" width="200"/>
+  <img src="media/5208607604543189548.jpg" width="200"/>
+</p>
 
 <h3>🎭 Анонимный чат</h3>
-<img src="media/5208607604543189551.jpg" width="200"/
-<img src="media/5208607604543189552.jpg" width="200"/
-<img src="media/5208607604543189553.jpg" width="200"/
-<img src="media/5208607604543189554.jpg" width="200"/
-<img src="media/5208607604543189555.jpg" width="200"/
-<img src="media/5208607604543189556.jpg" width="200"/
+<p align="left">
+  <img src="media/5208607604543189551.jpg" width="200"/>
+  <img src="media/5208607604543189552.jpg" width="200"/>
+  <img src="media/5208607604543189553.jpg" width="200"/>
+</p>
+
+<p align="left">
+  <img src="media/5208607604543189554.jpg" width="200"/>
+  <img src="media/5208607604543189555.jpg" width="200"/>
+  <img src="media/5208607604543189556.jpg" width="200"/>
+</p>
+
 
 ---
 
