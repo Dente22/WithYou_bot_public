@@ -2,86 +2,158 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>WithYou — бот поддержки</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Withyou_bot — поддержка рядом</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
   <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
     body {
-      font-family: sans-serif;
-      padding: 20px;
+      margin: 0;
+      background: radial-gradient(ellipse at bottom, #0a0a0a 0%, #000 100%);
+      color: #fff;
+      padding: 2rem;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 200%; height: 200%;
+      background: url('https://raw.githubusercontent.com/danielgatis/rembg/master/assets/stars.png') repeat;
+      background-size: cover;
+      animation: moveStars 120s linear infinite;
+      opacity: 0.08;
+      z-index: -1;
+    }
+    @keyframes moveStars {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(-50%, -50%); }
+    }
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 0.25rem;
+    }
+    h2 {
+      text-align: center;
+      color: #aaa;
+      font-weight: normal;
+      margin-bottom: 2rem;
+    }
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       max-width: 960px;
-      margin: auto;
+      margin: 0 auto;
     }
-    img {
-      margin: 10px;
+    .card {
+      background: rgba(30, 30, 60, 0.8);
       border-radius: 12px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-      width: 200px;
+      padding: 1.5rem;
+      box-shadow: 0 0 20px rgba(130, 0, 255, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 0.8s ease-in forwards;
+      opacity: 0;
     }
-    h3 {
-      margin-top: 30px;
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(190, 90, 255, 0.4);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .card-header i {
+      color: #a855f7;
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .card p {
+      color: #ccc;
+      margin: 0;
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .tg-button {
+      padding: 1rem 2rem;
+      background: linear-gradient(135deg, #a855f7, #6b21bd);
+      border: none;
+      border-radius: 12px;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+      transition: all 0.3s ease;
+    }
+    .tg-button:hover {
+      background: linear-gradient(135deg, #b983ff, #7e22ce);
+      box-shadow: 0 0 30px rgba(200, 120, 255, 0.6);
+      transform: translateY(-3px);
     }
   </style>
 </head>
 <body>
-  <h1>🤖 WithYou — бот поддержки и анонимного общения</h1>
-  <p><strong>Telegram-бот, который помогает в трудные моменты: через честные слова, плейлисты, письма и общение с незнакомцами.</strong><br>
-  Он говорит, как сказал бы ты близкому человеку.</p>
+  <h1>Withyou_bot</h1>
+  <h2>Анонимная поддержка, письма, музыка и общение — тогда, когда особенно нужно.</h2>
 
-  <h2>📽 Демонстрация</h2>
-  <img src="media/demo.gif" width="250"/>
+  <div class="grid">
+    <div class="card">
+      <div class="card-header">
+        <i data-lucide="message-circle-heart"></i>
+        <h3>Письма от незнакомцев</h3>
+      </div>
+      <p>Отправь или получи искреннее письмо от случайного человека. Иногда несколько слов могут всё изменить.</p>
+    </div>
 
-  <h2>📸 Интерфейс и функции</h2>
+    <div class="card">
+      <div class="card-header">
+        <i data-lucide="bot"></i>
+        <h3>Эмоциональная поддержка</h3>
+      </div>
+      <p>Бот отвечает на твои чувства так, как это сделал бы друг. Пустота, тревога, паника, любовь — ты не один.</p>
+    </div>
 
-  <h3>🤖 О боте</h3>
-  <img src="media/5208607604543189539.jpg"/>
+    <div class="card">
+      <div class="card-header">
+        <i data-lucide="map-pin"></i>
+        <h3>Геолокация и люди рядом</h3>
+      </div>
+      <p>Ищи других пользователей в своём городе и пиши им письма или просто знай — вы рядом.</p>
+    </div>
 
-  <h3>🧠 Меню чувств</h3>
-  <img src="media/5208607604543189540.jpg"/>
+    <div class="card">
+      <div class="card-header">
+        <i data-lucide="music"></i>
+        <h3>Музыка по настроению</h3>
+      </div>
+      <p>Бот подскажет треки или плейлист под твоё состояние. Иногда музыку нужно не слышать — а чувствовать.</p>
+    </div>
+  </div>
 
-  <h3>💬 Ответ на «про любовь»</h3>
-  <img src="media/5208607604543189541.jpg"/>
+  <div class="button-container">
+    <a class="tg-button" href="https://t.me/WithYoou_bot" target="_blank">Открыть бота в Telegram</a>
+  </div>
 
-  <h3>💬 Ответ на «мне тяжело»</h3>
-  <img src="media/5208607604543189542.jpg"/>
-
-  <h3>💬 Ответ на «я ничего не чувствую»</h3>
-  <img src="media/5208607604543189543.jpg"/>
-
-  <h3>💬 Ответ на «у меня паника»</h3>
-  <img src="media/5208607604543189544.jpg"/>
-
-  <h3>✉️ Письма незнакомцу</h3>
-  <img src="media/5208607604543189545.jpg"/>
-  <img src="media/5208607604543189550.jpg"/>
-
-  <h3>📀 Плейлисты по настроению</h3>
-  <img src="media/5208607604543189547.jpg"/>
-
-  <h3>📍 Геолокация и поиск рядом</h3>
-  <img src="media/5208607604543189549.jpg"/>
-  <img src="media/5208607604543189548.jpg"/>
-
-  <h3>🎭 Анонимный чат</h3>
-  <img src="media/5208607604543189551.jpg"/>
-  <img src="media/5208607604543189552.jpg"/>
-  <img src="media/5208607604543189553.jpg"/>
-  <img src="media/5208607604543189554.jpg"/>
-  <img src="media/5208607604543189555.jpg"/>
-  <img src="media/5208607604543189556.jpg"/>
-
-  <h2>🛠 Технологии</h2>
-  <ul>
-    <li>Python 3.11</li>
-    <li>Telebot (PyTelegramBotAPI)</li>
-    <li>SQLite</li>
-    <li>GitHub Pages</li>
-  </ul>
-
-  <h2>📎 Ссылка на репозиторий</h2>
-  <a href="https://github.com/Dente22/WithYou_bot_public" target="_blank">👉 GitHub (WithYou_bot_public)</a>
-
-  <h2>🧠 Идея</h2>
-  <p>Этот бот создан, чтобы поддерживать людей, которым тяжело. Он не выносит диагнозов, не даёт советы — он просто <strong>рядом</strong>, и говорит то, что нужно услышать.</p>
-
-  <p><em>Автор: Данил Гапонов (<a href="https://t.me/DiskusMS">@DiskusMS</a>)<br>Город: Алматы<br>Возраст: 18</em></p>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
