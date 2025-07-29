@@ -62,11 +62,11 @@
 <h3>🧠 Меню чувств</h3>
 <p align="left">
   <img src="media/5208607604543189540.jpg" width="200"/>
-  <img src="media/5208607604543189541.jpg" width="200"/>
 </p>
 
 <h3>💬 Ответы на чувства</h3>
 <p align="left">
+  <img src="media/5208607604543189541.jpg" width="200"/>
   <img src="media/5208607604543189542.jpg" width="200"/>
   <img src="media/5208607604543189543.jpg" width="200"/>
   <img src="media/5208607604543189544.jpg" width="200"/>
@@ -98,8 +98,8 @@
 
 <p align="left">
   <img src="media/5208607604543189554.jpg" width="200"/>
-  <img src="media/5208607604543189555.jpg" width="200"/>
   <img src="media/5208607604543189556.jpg" width="200"/>
+  <img src="media/5208607604543189555.jpg" width="200"/>
 </p>
 
 
