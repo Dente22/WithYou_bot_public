@@ -1,13 +1,10 @@
 <h1 align="center">🤖 Withyou_bot</h1>
 
 <p align="center">
-  <a href="https://dente22.github.io/WithYou_bot_public/" target="_blank" style="text-decoration: none;">
-    <span style="background: linear-gradient(to right, #00ff88, #000000); -webkit-background-clip: text; color: transparent; font-weight: bold; font-size: 20px;">
-      🌐 Сайт проекта WithYou_bot
-    </span>
+  <a href="https://dente22.github.io/WithYou_bot_public/" target="_blank" style="text-decoration:none; color:#00ff88; font-weight:bold;">
+    🌐 Сайт проекта WithYou_bot
   </a>
 </p>
-
 
 <h3 align="center">Анонимная поддержка, письма и общение — в трудный момент</h3>
 
