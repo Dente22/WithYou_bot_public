@@ -50,7 +50,7 @@
 
 <h3>📽 Демонстрация бота</h3>
 <p align="left">
-  <img src="demo.gif" width="250"/>
+  <img src="media/demo.gif" width="250"/>
 </p>
 
 ---
